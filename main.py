@@ -48,7 +48,17 @@ st.code("""st.radio("your OS:",["windows", "Linux", "MacOS", "TailOS"])""")
 st.radio("your OS:",["windows", "Linux", "MacOS", "TailOS"])
 st.text("some usage example:")
 st.code("""
-uc=st.radio("which OS":",["windows", "Linux", "MacOS", "TailOS")
+uc=st.radio("which OS:",["windows", "Linux", "MacOS", "TailOS"])
 if uc== "windows":
     st.write("not safe")
-efif uc== "MacOS":""")
+elif uc== "MacOS":
+    st.write("Mid safe")
+else:
+    st.write("safe")""")
+uc=st.radio("which OS:",["windows", "Linux", "MacOS", "TailOS"])
+if uc== "windows":
+    st.write("not safe")
+elif uc== "MacOS":
+    st.write("Mid safe")
+else:
+    st.write("safe")
