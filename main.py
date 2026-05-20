@@ -22,4 +22,8 @@ st.subheader("Text")
 st.code("st.write('Hello, Streamlit!')")
 st.write('Hello, Streamlit!')
 st.subheader("List Selectbox")
-st.code("option = st.selectbox('Select a number:', [1, 2,3,4,5])")
+st.code("""
+        option = st.selectbox('Select a number:', [1, 2,3,4,5])"
+        st.write('You selected:', option)""")
+option = st.selectbox('Select a number:', [1, 2,3,4,5])
+st.write('You selected:', option)
