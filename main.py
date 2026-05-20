@@ -27,3 +27,6 @@ st.code("""
         st.write('You selected:', option)""")
 option = st.selectbox('Select a number:', [1, 2,3,4,5])
 st.write('You selected:', option)
+st.subheader("Success")
+st.code("""st.success("success")""")
+st.success("success")
