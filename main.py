@@ -57,8 +57,10 @@ else:
     st.write("safe")""")
 uc=st.radio("which OS:",["windows", "Linux", "MacOS", "TailOS"])
 if uc== "windows":
-    st.write("not safe")
+    a="not safe"
 elif uc== "MacOS":
-    st.write("Mid safe")
+    a="Mid safe"
 else:
-    st.write("safe")
+    a="safe"
+
+st.write(uc,"is",a)
